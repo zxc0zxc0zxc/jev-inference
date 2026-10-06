@@ -1,0 +1,332 @@
+[
+  {
+    "id": "sentiment-positive",
+    "category": "sentiment",
+    "context": "Classify the sentiment: \"The delivery was fast and the product works perfectly. I love it.\"",
+    "choices": [
+      "positive",
+      "neutral",
+      "negative"
+    ],
+    "answer": "positive"
+  },
+  {
+    "id": "sentiment-negative",
+    "category": "sentiment",
+    "context": "Classify the sentiment: \"It broke on day one. Customer support ignored me. A waste of money.\"",
+    "choices": [
+      "neutral",
+      "negative",
+      "positive"
+    ],
+    "answer": "negative"
+  },
+  {
+    "id": "sentiment-neutral",
+    "category": "sentiment",
+    "context": "Classify the sentiment: \"The package contains two cables and an instruction booklet.\"",
+    "choices": [
+      "negative",
+      "positive",
+      "neutral"
+    ],
+    "answer": "neutral"
+  },
+  {
+    "id": "topic-sports",
+    "category": "topic",
+    "context": "Classify the news topic: \"The striker scored twice as the home team won the football final.\"",
+    "choices": [
+      "sports",
+      "technology",
+      "finance"
+    ],
+    "answer": "sports"
+  },
+  {
+    "id": "topic-technology",
+    "category": "topic",
+    "context": "Classify the news topic: \"The new processor doubles GPU throughput for neural network inference.\"",
+    "choices": [
+      "sports",
+      "technology",
+      "finance"
+    ],
+    "answer": "technology"
+  },
+  {
+    "id": "topic-finance",
+    "category": "topic",
+    "context": "Classify the news topic: \"The central bank raised interest rates and bond yields climbed.\"",
+    "choices": [
+      "sports",
+      "technology",
+      "finance"
+    ],
+    "answer": "finance"
+  },
+  {
+    "id": "intent-cancel",
+    "category": "intent",
+    "context": "Classify the customer intent: \"Please cancel my subscription. I do not want another monthly charge.\"",
+    "choices": [
+      "cancel subscription",
+      "reset password",
+      "track shipment"
+    ],
+    "answer": "cancel subscription"
+  },
+  {
+    "id": "intent-password",
+    "category": "intent",
+    "context": "Classify the customer intent: \"I forgot my login password. How can I set a new one?\"",
+    "choices": [
+      "cancel subscription",
+      "reset password",
+      "track shipment"
+    ],
+    "answer": "reset password"
+  },
+  {
+    "id": "intent-shipment",
+    "category": "intent",
+    "context": "Classify the customer intent: \"My order was dispatched last Tuesday. Where is the parcel now?\"",
+    "choices": [
+      "cancel subscription",
+      "reset password",
+      "track shipment"
+    ],
+    "answer": "track shipment"
+  },
+  {
+    "id": "priority-low",
+    "category": "rules",
+    "context": "Use this exact rule: P1 if all customers are blocked; P2 if some customers are blocked; P3 if nobody is blocked. A typo in a tooltip blocks nobody. Choose priority.",
+    "choices": [
+      "P3",
+      "P1",
+      "P2"
+    ],
+    "answer": "P3"
+  },
+  {
+    "id": "priority-critical",
+    "category": "rules",
+    "context": "Use this exact rule: P1 if all customers are blocked; P2 if some customers are blocked; P3 if nobody is blocked. The login service is down and all customers are blocked. Choose priority.",
+    "choices": [
+      "P3",
+      "P1",
+      "P2"
+    ],
+    "answer": "P1"
+  },
+  {
+    "id": "priority-partial",
+    "category": "rules",
+    "context": "Use this exact rule: P1 if all customers are blocked; P2 if some customers are blocked; P3 if nobody is blocked. Ten of one thousand customers cannot log in; others can. Choose priority.",
+    "choices": [
+      "P3",
+      "P1",
+      "P2"
+    ],
+    "answer": "P2"
+  },
+  {
+    "id": "risk-high",
+    "category": "rules",
+    "context": "Payment risk policy: 0 failures = low; 1 to 2 failures = medium; 3 or more failures = high. The customer has 5 failed payments. Classify risk.",
+    "choices": [
+      "high",
+      "low",
+      "medium"
+    ],
+    "answer": "high"
+  },
+  {
+    "id": "risk-low",
+    "category": "rules",
+    "context": "Payment risk policy: 0 failures = low; 1 to 2 failures = medium; 3 or more failures = high. The customer has 0 failed payments. Classify risk.",
+    "choices": [
+      "high",
+      "low",
+      "medium"
+    ],
+    "answer": "low"
+  },
+  {
+    "id": "risk-medium",
+    "category": "rules",
+    "context": "Payment risk policy: 0 failures = low; 1 to 2 failures = medium; 3 or more failures = high. The customer has 2 failed payments. Classify risk.",
+    "choices": [
+      "high",
+      "low",
+      "medium"
+    ],
+    "answer": "medium"
+  },
+  {
+    "id": "action-heal",
+    "category": "action",
+    "context": "Game policy: heal if HP < 20 and a potion is available; otherwise retreat if HP < 20; otherwise attack. HP is 10, and a potion is available. Choose action.",
+    "choices": [
+      "heal",
+      "retreat",
+      "attack"
+    ],
+    "answer": "heal"
+  },
+  {
+    "id": "action-retreat",
+    "category": "action",
+    "context": "Game policy: heal if HP < 20 and a potion is available; otherwise retreat if HP < 20; otherwise attack. HP is 10, and no potion is available. Choose action.",
+    "choices": [
+      "heal",
+      "retreat",
+      "attack"
+    ],
+    "answer": "retreat"
+  },
+  {
+    "id": "action-attack",
+    "category": "action",
+    "context": "Game policy: heal if HP < 20 and a potion is available; otherwise retreat if HP < 20; otherwise attack. HP is 80, and a potion is available. Choose action.",
+    "choices": [
+      "heal",
+      "retreat",
+      "attack"
+    ],
+    "answer": "attack"
+  },
+  {
+    "id": "arithmetic-multiply",
+    "category": "arithmetic",
+    "context": "Choose the correct result of 7 * 8.",
+    "choices": [
+      "56",
+      "64",
+      "54"
+    ],
+    "answer": "56"
+  },
+  {
+    "id": "arithmetic-subtract",
+    "category": "arithmetic",
+    "context": "Choose the correct result of 100 - 37.",
+    "choices": [
+      "67",
+      "63",
+      "73"
+    ],
+    "answer": "63"
+  },
+  {
+    "id": "arithmetic-compare",
+    "category": "arithmetic",
+    "context": "Which number is the smallest?",
+    "choices": [
+      "0.9",
+      "0.12",
+      "0.03"
+    ],
+    "answer": "0.03"
+  },
+  {
+    "id": "logic-entailed",
+    "category": "logic",
+    "context": "Classify the claim using only the facts: entailed if necessarily true, contradicted if necessarily false, unknown otherwise. Facts: All ravens are birds. Rook is a raven. Claim: Rook is a bird.",
+    "choices": [
+      "entailed",
+      "contradicted",
+      "unknown"
+    ],
+    "answer": "entailed"
+  },
+  {
+    "id": "logic-contradicted",
+    "category": "logic",
+    "context": "Classify the claim using only the facts: entailed if necessarily true, contradicted if necessarily false, unknown otherwise. Facts: No cats are reptiles. Luna is a cat. Claim: Luna is a reptile.",
+    "choices": [
+      "entailed",
+      "contradicted",
+      "unknown"
+    ],
+    "answer": "contradicted"
+  },
+  {
+    "id": "logic-unknown",
+    "category": "logic",
+    "context": "Classify the claim using only the facts: entailed if necessarily true, contradicted if necessarily false, unknown otherwise. Facts: Some birds can fly. Rook is a bird. Claim: Rook can fly.",
+    "choices": [
+      "entailed",
+      "contradicted",
+      "unknown"
+    ],
+    "answer": "unknown"
+  },
+  {
+    "id": "sentiment-positive-short",
+    "category": "short-text",
+    "context": "Classify the sentiment: \"Everything is great, delivery was fast, and I am very happy with the purchase!\"",
+    "choices": [
+      "positive",
+      "neutral",
+      "negative"
+    ],
+    "answer": "positive"
+  },
+  {
+    "id": "sentiment-negative-short",
+    "category": "short-text",
+    "context": "Classify the sentiment: \"Terrible quality, it broke immediately, and I would not recommend it to anyone.\"",
+    "choices": [
+      "neutral",
+      "negative",
+      "positive"
+    ],
+    "answer": "negative"
+  },
+  {
+    "id": "sentiment-neutral-short",
+    "category": "short-text",
+    "context": "Classify the sentiment: \"There are three books on the table. A lamp stands next to them.\"",
+    "choices": [
+      "negative",
+      "positive",
+      "neutral"
+    ],
+    "answer": "neutral"
+  },
+  {
+    "id": "logs-healthy",
+    "category": "long-context",
+    "context": "Monitoring policy: status is failed if any log line has ERROR; otherwise warning if any line has WARN; otherwise healthy. Classify this log:\n000 INFO heartbeat ok, request completed, service reachable\n001 INFO heartbeat ok, request completed, service reachable\n002 INFO heartbeat ok, request completed, service reachable\n003 INFO heartbeat ok, request completed, service reachable\n004 INFO heartbeat ok, request completed, service reachable\n005 INFO heartbeat ok, request completed, service reachable\n006 INFO heartbeat ok, request completed, service reachable\n007 INFO heartbeat ok, request completed, service reachable\n008 INFO heartbeat ok, request completed, service reachable\n009 INFO heartbeat ok, request completed, service reachable\n010 INFO heartbeat ok, request completed, service reachable\n011 INFO heartbeat ok, request completed, service reachable\n012 INFO heartbeat ok, request completed, service reachable\n013 INFO heartbeat ok, request completed, service reachable\n014 INFO heartbeat ok, request completed, service reachable\n015 INFO heartbeat ok, request completed, service reachable\n016 INFO heartbeat ok, request completed, service reachable\n017 INFO heartbeat ok, request completed, service reachable\n018 INFO heartbeat ok, request completed, service reachable\n019 INFO heartbeat ok, request completed, service reachable\n020 INFO heartbeat ok, request completed, service reachable\n021 INFO heartbeat ok, request completed, service reachable\n022 INFO heartbeat ok, request completed, service reachable\n023 INFO heartbeat ok, request completed, service reachable\n024 INFO heartbeat ok, request completed, service reachable\n025 INFO heartbeat ok, request completed, service reachable\n026 INFO heartbeat ok, request completed, service reachable\n027 INFO heartbeat ok, request completed, service reachable\n028 INFO heartbeat ok, request completed, service reachable\n029 INFO heartbeat ok, request completed, service reachable\n030 INFO heartbeat ok, request completed, service reachable\n031 INFO heartbeat ok, request completed, service reachable\n032 INFO heartbeat ok, request completed, service reachable\n033 INFO heartbeat ok, request completed, service reachable\n034 INFO heartbeat ok, request completed, service reachable\n035 INFO heartbeat ok, request completed, service reachable\n036 INFO heartbeat ok, request completed, service reachable\n037 INFO heartbeat ok, request completed, service reachable\n038 INFO heartbeat ok, request completed, service reachable\n039 INFO heartbeat ok, request completed, service reachable",
+    "choices": [
+      "healthy",
+      "warning",
+      "failed"
+    ],
+    "answer": "healthy"
+  },
+  {
+    "id": "logs-warning",
+    "category": "long-context",
+    "context": "Monitoring policy: status is failed if any log line has ERROR; otherwise warning if any line has WARN; otherwise healthy. Classify this log:\n000 INFO heartbeat ok, request completed, service reachable\n001 INFO heartbeat ok, request completed, service reachable\n002 INFO heartbeat ok, request completed, service reachable\n003 INFO heartbeat ok, request completed, service reachable\n004 INFO heartbeat ok, request completed, service reachable\n005 INFO heartbeat ok, request completed, service reachable\n006 INFO heartbeat ok, request completed, service reachable\n007 INFO heartbeat ok, request completed, service reachable\n008 INFO heartbeat ok, request completed, service reachable\n009 INFO heartbeat ok, request completed, service reachable\n010 INFO heartbeat ok, request completed, service reachable\n011 INFO heartbeat ok, request completed, service reachable\n012 INFO heartbeat ok, request completed, service reachable\n013 INFO heartbeat ok, request completed, service reachable\n014 INFO heartbeat ok, request completed, service reachable\n015 INFO heartbeat ok, request completed, service reachable\n016 INFO heartbeat ok, request completed, service reachable\n017 INFO heartbeat ok, request completed, service reachable\n018 INFO heartbeat ok, request completed, service reachable\n019 INFO heartbeat ok, request completed, service reachable\n020 INFO heartbeat ok, request completed, service reachable\n021 INFO heartbeat ok, request completed, service reachable\n022 INFO heartbeat ok, request completed, service reachable\n023 INFO heartbeat ok, request completed, service reachable\n024 INFO heartbeat ok, request completed, service reachable\n025 INFO heartbeat ok, request completed, service reachable\n026 INFO heartbeat ok, request completed, service reachable\n027 WARN disk usage above threshold\n028 INFO heartbeat ok, request completed, service reachable\n029 INFO heartbeat ok, request completed, service reachable\n030 INFO heartbeat ok, request completed, service reachable\n031 INFO heartbeat ok, request completed, service reachable\n032 INFO heartbeat ok, request completed, service reachable\n033 INFO heartbeat ok, request completed, service reachable\n034 INFO heartbeat ok, request completed, service reachable\n035 INFO heartbeat ok, request completed, service reachable\n036 INFO heartbeat ok, request completed, service reachable\n037 INFO heartbeat ok, request completed, service reachable\n038 INFO heartbeat ok, request completed, service reachable\n039 INFO heartbeat ok, request completed, service reachable",
+    "choices": [
+      "healthy",
+      "warning",
+      "failed"
+    ],
+    "answer": "warning"
+  },
+  {
+    "id": "logs-failed",
+    "category": "long-context",
+    "context": "Monitoring policy: status is failed if any log line has ERROR; otherwise warning if any line has WARN; otherwise healthy. Classify this log:\n000 INFO heartbeat ok, request completed, service reachable\n001 INFO heartbeat ok, request completed, service reachable\n002 INFO heartbeat ok, request completed, service reachable\n003 INFO heartbeat ok, request completed, service reachable\n004 INFO heartbeat ok, request completed, service reachable\n005 INFO heartbeat ok, request completed, service reachable\n006 INFO heartbeat ok, request completed, service reachable\n007 INFO heartbeat ok, request completed, service reachable\n008 INFO heartbeat ok, request completed, service reachable\n009 INFO heartbeat ok, request completed, service reachable\n010 INFO heartbeat ok, request completed, service reachable\n011 INFO heartbeat ok, request completed, service reachable\n012 WARN retry scheduled\n013 INFO heartbeat ok, request completed, service reachable\n014 INFO heartbeat ok, request completed, service reachable\n015 INFO heartbeat ok, request completed, service reachable\n016 INFO heartbeat ok, request completed, service reachable\n017 INFO heartbeat ok, request completed, service reachable\n018 INFO heartbeat ok, request completed, service reachable\n019 INFO heartbeat ok, request completed, service reachable\n020 INFO heartbeat ok, request completed, service reachable\n021 INFO heartbeat ok, request completed, service reachable\n022 INFO heartbeat ok, request completed, service reachable\n023 INFO heartbeat ok, request completed, service reachable\n024 INFO heartbeat ok, request completed, service reachable\n025 INFO heartbeat ok, request completed, service reachable\n026 INFO heartbeat ok, request completed, service reachable\n027 INFO heartbeat ok, request completed, service reachable\n028 INFO heartbeat ok, request completed, service reachable\n029 INFO heartbeat ok, request completed, service reachable\n030 INFO heartbeat ok, request completed, service reachable\n031 INFO heartbeat ok, request completed, service reachable\n032 ERROR database connection refused\n033 INFO heartbeat ok, request completed, service reachable\n034 INFO heartbeat ok, request completed, service reachable\n035 INFO heartbeat ok, request completed, service reachable\n036 INFO heartbeat ok, request completed, service reachable\n037 INFO heartbeat ok, request completed, service reachable\n038 INFO heartbeat ok, request completed, service reachable\n039 INFO heartbeat ok, request completed, service reachable",
+    "choices": [
+      "healthy",
+      "warning",
+      "failed"
+    ],
+    "answer": "failed"
+  }
+]

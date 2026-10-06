@@ -1,0 +1,45 @@
+# Local agent setup
+.codex/
+.agents/
+.claude/
+.ai-factory/
+.ai-factory.json
+/AGENTS.md
+
+# Environments and credentials
+.venv/
+.venv-*/
+.env
+.env.*
+!.env.example
+.modal/
+.modal.toml
+
+# Python build and test output
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+
+# Local downloads, models and logs
+.cache/
+*.log
+*.safetensors
+*.gguf
+*.pt
+*.pth
+docs/modal-smoke*
+docs/experiment.md
+
+# Editor and OS files
+.idea/
+.vscode/
+.DS_Store
